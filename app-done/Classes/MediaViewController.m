@@ -358,7 +358,7 @@ static NSString *const kPrefShowStreamTimeRemaining =
   if (appDelegate.castControlBarsEnabled) {
     appDelegate.castControlBarsEnabled = NO;
   }
-  [self performSegueWithIdentifier:@"expandedController" sender:self];
+  [[GCKCastContext sharedInstance] presentDefaultExpandedMediaControls];
 }
 
 /**

@@ -113,6 +113,8 @@ static NSString *const kPrefEnableMediaNotifications =
   [[UIApplication sharedApplication]
       setStatusBarStyle:UIStatusBarStyleLightContent];
 
+  [GCKCastContext sharedInstance].useDefaultExpandedMediaControls = YES;
+
   return YES;
 }
 
@@ -255,8 +257,7 @@ static NSString *const kPrefEnableMediaNotifications =
   if (appDelegate.castControlBarsEnabled) {
     appDelegate.castControlBarsEnabled = NO;
   }
-  [navigationController performSegueWithIdentifier:@"expandedController"
-                                            sender:navigationController];
+  [[GCKCastContext sharedInstance] presentDefaultExpandedMediaControls];
 }
 
 - (void)showAlertWithTitle:(NSString *)title message:(NSString *)message {
