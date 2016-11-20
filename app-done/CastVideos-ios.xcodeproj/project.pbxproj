@@ -535,7 +535,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.sample.ChromeCast.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "CastVideos-ios";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -554,7 +554,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.google.sample.ChromeCast.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "CastVideos-ios";
 				TARGETED_DEVICE_FAMILY = 1;
