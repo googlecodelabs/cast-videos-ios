@@ -74,10 +74,6 @@
 		6FEF798E1CB8222E001211D3 /* playlist@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEF798A1CB8222E001211D3 /* playlist@3x.png */; };
 		6FEF79B41CBC340B001211D3 /* play_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEF79B21CBC340B001211D3 /* play_circle@2x.png */; };
 		6FEF79B51CBC340B001211D3 /* play_circle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FEF79B31CBC340B001211D3 /* play_circle@3x.png */; };
-		A5552CAC1DCA5D9A0076D86A /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5552CAB1DCA5D9A0076D86A /* GoogleCast.framework */; };
-		A5552CAD1DCA5D9A0076D86A /* GoogleCast.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5552CAB1DCA5D9A0076D86A /* GoogleCast.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A5EEDA1A1DCA555800F90823 /* GoogleCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5EEDA191DCA555800F90823 /* GoogleCast.framework */; };
-		A5EEDA1E1DCA576B00F90823 /* GoogleCastResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A5EEDA1D1DCA576B00F90823 /* GoogleCastResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,7 +83,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A5552CAD1DCA5D9A0076D86A /* GoogleCast.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,11 +169,6 @@
 		6FEF798A1CB8222E001211D3 /* playlist@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "playlist@3x.png"; path = "Resources/playlist@3x.png"; sourceTree = "<group>"; };
 		6FEF79B21CBC340B001211D3 /* play_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play_circle@2x.png"; path = "Resources/play_circle@2x.png"; sourceTree = "<group>"; };
 		6FEF79B31CBC340B001211D3 /* play_circle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "play_circle@3x.png"; path = "Resources/play_circle@3x.png"; sourceTree = "<group>"; };
-		A5552CAB1DCA5D9A0076D86A /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "Frameworks/GoogleCastSDK-Public-3.2.0-Release/GoogleCast.framework"; sourceTree = "<group>"; };
-		A5EEDA151DCA552900F90823 /* GoogleCastSDK-Public-3.2.0-Release-ios.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "GoogleCastSDK-Public-3.2.0-Release-ios.zip"; path = "Frameworks/GoogleCastSDK-Public-3.2.0-Release-ios.zip"; sourceTree = "<group>"; };
-		A5EEDA171DCA554000F90823 /* GoogleCastSDK-Public-3.2.0-Release */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "GoogleCastSDK-Public-3.2.0-Release"; path = "Frameworks/GoogleCastSDK-Public-3.2.0-Release"; sourceTree = "<group>"; };
-		A5EEDA191DCA555800F90823 /* GoogleCast.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleCast.framework; path = "Frameworks/GoogleCastSDK-Public-3.2.0-Release/GoogleCast.framework"; sourceTree = "<group>"; };
-		A5EEDA1D1DCA576B00F90823 /* GoogleCastResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleCastResources.bundle; path = "Frameworks/GoogleCastSDK-Public-3.2.0-Release/GoogleCast.framework/GoogleCastResources.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +176,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5EEDA1A1DCA555800F90823 /* GoogleCast.framework in Frameworks */,
 				6FCE60AA1CC57BFF000129A3 /* QuartzCore.framework in Frameworks */,
 				6FE547391CA9CECA00691C24 /* libc++.tbd in Frameworks */,
 				6F233F781CA4791000E484F1 /* Foundation.framework in Frameworks */,
@@ -194,7 +183,6 @@
 				6F233F741CA478FB00E484F1 /* CoreGraphics.framework in Frameworks */,
 				6F233F701CA477C500E484F1 /* SystemConfiguration.framework in Frameworks */,
 				6F233F6C1CA477BB00E484F1 /* MediaAccessibility.framework in Frameworks */,
-				A5552CAC1DCA5D9A0076D86A /* GoogleCast.framework in Frameworks */,
 				6F233F6D1CA477BB00E484F1 /* MediaPlayer.framework in Frameworks */,
 				6F233F6E1CA477BB00E484F1 /* MediaToolbox.framework in Frameworks */,
 				6F233F661CA4777B00E484F1 /* CoreText.framework in Frameworks */,
@@ -237,9 +225,6 @@
 		6F233EB81CA460B100E484F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A5EEDA191DCA555800F90823 /* GoogleCast.framework */,
-				A5EEDA171DCA554000F90823 /* GoogleCastSDK-Public-3.2.0-Release */,
-				A5EEDA151DCA552900F90823 /* GoogleCastSDK-Public-3.2.0-Release-ios.zip */,
 				6FCE60A91CC57BFF000129A3 /* QuartzCore.framework */,
 				6FE547381CA9CECA00691C24 /* libc++.tbd */,
 				6F233F771CA4791000E484F1 /* Foundation.framework */,
@@ -310,8 +295,6 @@
 		6FBC43D61CA3138500AAB267 = {
 			isa = PBXGroup;
 			children = (
-				A5552CAB1DCA5D9A0076D86A /* GoogleCast.framework */,
-				A5EEDA1D1DCA576B00F90823 /* GoogleCastResources.bundle */,
 				6F233EB91CA460BB00E484F1 /* Resources */,
 				6F233EB81CA460B100E484F1 /* Frameworks */,
 				6F233EB71CA460AC00E484F1 /* Classes */,
@@ -397,7 +380,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5EEDA1E1DCA576B00F90823 /* GoogleCastResources.bundle in Resources */,
 				6F3F70BE1CB5CFAE006AF097 /* logo_castvideos@2x.png in Resources */,
 				6FE3DCFB1CC056690064C1E9 /* volume3@2x.png in Resources */,
 				6FCE60C41CC6CB24000129A3 /* pause@3.png in Resources */,
@@ -556,7 +538,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/GoogleCastSDK-Public-3.2.0-Release",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/CastVideos-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -579,7 +560,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
-					"$(PROJECT_DIR)/Frameworks/GoogleCastSDK-Public-3.2.0-Release",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/CastVideos-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
