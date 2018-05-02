@@ -31,6 +31,7 @@ static NSString *const kPrefMediaListURL = @"media_list_url";
   NSURL *_mediaListURL;
   ActionSheet *_actionSheet;
   MediaItem *selectedItem;
+  GCKUICastButton *_castButton;
 }
 
 /** The media to be displayed. */
@@ -63,11 +64,10 @@ static NSString *const kPrefMediaListURL = @"media_list_url";
     [self loadMediaList];
   }
 
-  GCKUICastButton *castButton =
-      [[GCKUICastButton alloc] initWithFrame:CGRectMake(0, 0, 24, 24)];
-  castButton.tintColor = [UIColor whiteColor];
+  _castButton = [[GCKUICastButton alloc] initWithFrame:CGRectMake(0, 0, 24, 24)];
+  _castButton.tintColor = [UIColor whiteColor];
   self.navigationItem.rightBarButtonItem =
-      [[UIBarButtonItem alloc] initWithCustomView:castButton];
+      [[UIBarButtonItem alloc] initWithCustomView:_castButton];
 
   self.tableView.separatorColor = [UIColor clearColor];
 }
@@ -91,7 +91,7 @@ static NSString *const kPrefMediaListURL = @"media_list_url";
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  [[GCKCastContext sharedInstance] presentCastInstructionsViewControllerOnce];
+  [[GCKCastContext sharedInstance] presentCastInstructionsViewControllerOnceWithCastButton:_castButton];
 }
 
 #pragma mark - Table View
