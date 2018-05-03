@@ -347,8 +347,8 @@ static NSString *const kPrefShowStreamTimeRemaining =
   GCKCastSession *castSession =
       [GCKCastContext sharedInstance].sessionManager.currentCastSession;
   if (castSession) {
-    [castSession.remoteMediaClient loadMedia:[self buildMediaInformation]
-                                    autoplay:YES];
+    GCKMediaLoadOptions *loadOptions = [[GCKMediaLoadOptions alloc] init];
+    [castSession.remoteMediaClient loadMedia:[self buildMediaInformation] withOptions:loadOptions];
   }
   self.navigationItem.backBarButtonItem =
       [[UIBarButtonItem alloc] initWithTitle:@""

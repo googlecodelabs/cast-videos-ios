@@ -53,13 +53,15 @@ static NSString *const kPrefEnableMediaNotifications =
     return YES;
   }
 
+  GCKDiscoveryCriteria *discoveryCriteria =
+    [[GCKDiscoveryCriteria alloc] initWithApplicationID:applicationID];
   GCKCastOptions *options =
-      [[GCKCastOptions alloc] initWithReceiverApplicationID:applicationID];
+    [[GCKCastOptions alloc] initWithDiscoveryCriteria:discoveryCriteria];
   [GCKCastContext setSharedInstanceWithOptions:options];
 
   GCKLoggerFilter *logFilter = [[GCKLoggerFilter alloc] init];
-  logFilter.exclusive = YES;
-  [logFilter addClassNames:@[
+  [logFilter setLoggingLevel:GCKLoggerLevelVerbose
+                  forClasses:@[
     @"GCKDeviceScanner",
     @"GCKDeviceProvider",
     @"GCKDiscoveryManager",
